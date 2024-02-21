@@ -19,7 +19,7 @@ public struct LinearGradientBackground: ViewModifier {
 
 extension View {
 /// Generic background function for scenes
-    func linearGradientBackground(_ gradient: LinearGradient = LinearGradient(colors: [.red, .pink], startPoint: .top, endPoint: .bottom), _ opacity: Double = 1.0) -> some View {
+   public func linearGradientBackground(_ gradient: LinearGradient = LinearGradient(colors: [.red, .pink], startPoint: .top, endPoint: .bottom), _ opacity: Double = 1.0) -> some View {
         self
             .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
             .modifier(LinearGradientBackground(gradient: gradient, opacity: opacity))
