@@ -14,7 +14,16 @@ public struct StarRating: View {
     @State public var fillImage: String = ""
     @State public var normalImage: String = ""
     public var height: CGFloat = 45
-   private let maxRating: Double = 5
+    private let maxRating: Double = 5
+    
+    
+    public init(rating: Binding<Int>, dragValue: DragGesture.Value? = nil, fillImage: String = "", normalImage: String = "", height: CGFloat = 45) {
+        _rating = rating
+        self.dragValue = dragValue
+        self.fillImage = fillImage
+        self.normalImage = normalImage
+        self.height = height
+    }
     // MARK: - View Main Body
     public var body: some View {
         HStack {
