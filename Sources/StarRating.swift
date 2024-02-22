@@ -35,6 +35,7 @@ public struct StarRating: View {
                     .frame(height: height)
                     .onTapGesture {
                         rating = index
+                        print("Something")
                     }
             }
         }
