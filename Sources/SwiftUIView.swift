@@ -15,6 +15,8 @@ public struct SwiftUIView: View {
         Text("This is from Swift Package Manager!!!!")
         
         Text("This is from Swift Package Manager!!!!")
+        
+        Text("Some Changes")
     }
 }
 
